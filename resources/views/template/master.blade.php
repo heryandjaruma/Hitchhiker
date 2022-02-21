@@ -8,11 +8,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
-    <div class="navbar bg-secondary px-2">
+    <div class="navbar shadow-sm p-3 mb-5 rounded" style="background-color: #EFF2F4">
         <div>
             <?xml version="1.0" encoding="utf-8"?>
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                 viewBox="0 0 640 480" style="enable-background:new 0 0 640 480; width: 30%; fill: white" xml:space="preserve">
+                 viewBox="0 0 640 480" style="enable-background:new 0 0 640 480; width: 30%; fill: #0253B3" xml:space="preserve">
             <path d="M420.41,413.2c6.53-4.18,12.13-7.77,19.14-12.26c-16.9-9.9-32.73-19.17-49.58-29.03c2.3-4.89,4.32-9.23,6.39-13.54
                 c23.29-48.62,14-110.59-23.69-145.5c-11.07-10.25-25.49-17.69-39.54-23.68c-11.88-5.06-21.66-11.42-30.65-20.59
                 c-12.46-12.71-25.63-24.98-39.81-35.69c-21.61-16.33-47.13-13.38-65.77,6.33c-2.53,2.68-3.25,7.08-4.8,10.68
@@ -57,12 +57,15 @@
                 c0.82,2.61,0.5,5.15-0.91,7.64c-0.23,0.4-0.52,0.8-0.8,1.2c-0.21,0.29-0.37,0.6-0.62,0.88c-0.03,0.03-0.04,0.07-0.07,0.1
                 c-1.3,1.49-2.72,2.52-4.24,3.09C313.76,377.82,312.21,378.02,310.65,377.87z"/>
             </svg>
-
+        </div>
+        <a href="">
+            <?xml version="1.0" encoding="UTF-8"?>
+            <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" style="width: 5%"><path d="M12,12A6,6,0,1,0,6,6,6.006,6.006,0,0,0,12,12ZM12,2A4,4,0,1,1,8,6,4,4,0,0,1,12,2Z"/><path d="M12,14a9.01,9.01,0,0,0-9,9,1,1,0,0,0,2,0,7,7,0,0,1,14,0,1,1,0,0,0,2,0A9.01,9.01,0,0,0,12,14Z"/></svg>
+        </a>
     </div>
 
 
-        <button class="btn bg-white">Button</button>
-    </div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
