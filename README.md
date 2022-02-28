@@ -2,7 +2,7 @@
 <h2>How To Run Demo for This Laravel Project?</h2>
 <ol>
     <li>Download this repository</li>
-    <li>Start MySQL server and create database named `hitchhiker`</li>
+    <li>Start MySQL server and create a database named `hitchhiker`</li>
     <li>Execute `php artisan migrate:fresh --seed` in terminal on root folder</li>
     <li>Execute `php artisan serve` in terminal on root folder</li>
 </ol>
