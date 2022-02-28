@@ -30,16 +30,16 @@
                     </div>
                     <div class="col w-50">
                         <div class="form-floating my-2">
-                            <input type="text" name="email_address" class="form-control @error('email_address') is-invalid @enderror" placeholder="Email" value="{{old('email_address')}}" required>
-                            <label for="floatingInput">Email</label>
-                        </div>
-                        <div class="form-floating my-2">
                             <input type="text" name="address" class="form-control @error('address') is-invalid @enderror" placeholder="Address" value="{{old('address')}}" required>
                             <label for="floatingInput">Address</label>
                         </div>
                         <div class="form-floating my-2">
                             <input type="text" name="phone" class="form-control @error('phone') is-invalid @enderror" placeholder="Phone number" value="{{old('phone')}}" required>
                             <label for="floatingInput">Phone number</label>
+                        </div>
+                        <div class="form-floating my-2">
+                            <input type="text" name="email_address" class="form-control @error('email_address') is-invalid @enderror" placeholder="Email" value="{{old('email_address')}}" required>
+                            <label for="floatingInput">Age</label>
                         </div>
                         <div class="form-floating my-2">
                             <input type="date" name="birth" class="form-control @error('birth') is-invalid @enderror" placeholder="Birth Date" value="{{old('birth')}}" required>

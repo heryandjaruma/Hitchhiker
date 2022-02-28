@@ -24,7 +24,7 @@ class UserSeeder extends Seeder
             DB::table('users')->insert([
                 'fullname' => $faker->name,
                 'username' => $faker->userName,
-                'email_address' => $faker->email,
+                'age' => $faker->numberBetween(1,99),
                 'password' => Hash::make($faker->password),
                 'address' => $faker->address,
                 'phone' => $faker->phoneNumber,
@@ -35,7 +35,7 @@ class UserSeeder extends Seeder
         DB::table('users')->insert([
             'fullname' => 'Dummy User',
             'username' => 'useruser',
-            'email_address' => 'user@gmail.com',
+            'age' => '20',
             'password' => '$2a$12$mRaULGKHa9rcqm8zwAzh2eIjyXHL.VaNGtdgyewFt5N2j3oKAXZoW',
             'address' => $faker->address,
             'phone' => $faker->phoneNumber,

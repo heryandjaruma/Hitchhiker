@@ -147,20 +147,26 @@
                     <div class="row text-end h-3"><a href="/course">See All Courses</a></div>
                 </div>
                 <div class="row">
+                    @if ($myCourses->first())
                     <div class="d-flex flex-wrap justify-content-evenly gap-3">
                         @foreach ($myCourses as $c)
-                            <div class="card" style="width: 18rem;">
-                                <img src="{{Storage::url('/assets/course-thumbnail/'.$c->image.'.jpg')}}" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">{{$c->course_name}}</h5>
-                                    <p class="card-text text-secondary">{{$c->course_description}}</p>
-                                    <a href="/detail/{{$c->id}}" class="btn btn-primary">
-                                        {{ 'Rp. '.number_format($c->price, 0, '', '.').',-'}}
-                                    </a>
-                                </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="{{Storage::url('/assets/course-thumbnail/'.$c->image.'.jpg')}}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">{{$c->course_name}}</h5>
+                                <p class="card-text text-secondary">{{$c->course_description}}</p>
+                                <a href="/detail/{{$c->id}}" class="btn btn-primary">
+                                    Details
+                                </a>
                             </div>
+                        </div>
                         @endforeach
                     </div>
+                    @else
+                    <div class="h2 text-primary text-center">
+                        You don't have any courses currently!
+                    </div>
+                    @endif
                 </div>
             </div>
         </div>

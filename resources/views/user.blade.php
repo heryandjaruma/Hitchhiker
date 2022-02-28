@@ -14,7 +14,7 @@
                 <div class="d-flex flex-column align-items-center text-center p-3 py-5">
                     <img class="rounded-circle mt-5" width="150px" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg">
                     <span class="font-weight-bold">{{auth()->user()->username}}</span>
-                    <span class="text-black-50">{{auth()->user()->email_address}}</span>
+                    <span class="text-black-50">{{auth()->user()->fullname}}</span>
                     <span></span>
                 </div>
             </div>
@@ -24,12 +24,6 @@
                         <div class="text-right text-primary h1">Profile</div>
                     </div>
                     <div class="row mt-3">
-                        <div class="col-md-12">
-                            <label class="labels text-secondary">Fullname</label>
-                            <div class="h3">
-                                {{auth()->user()->fullname}}
-                            </div>
-                        </div>
                         <div class="col-md-12">
                             <label class="labels text-secondary">Address</label>
                             <div class="h3">
@@ -42,6 +36,13 @@
                                 {{auth()->user()->phone}}
                             </div>
                         </div>
+                        <div class="col-md-12">
+                            <label class="labels text-secondary">Age</label>
+                            <div class="h3">
+                                {{auth()->user()->age}}
+                            </div>
+                        </div>
+
                         <div class="col-md-12">
                             <label class="labels text-secondary">Birth Date</label>
                             <div class="h3">
@@ -77,20 +78,26 @@
             <div class="row text-end h-3"><a href="/course">See All Courses</a></div>
         </div>
         <div class="row">
+            @if ($myCourses->first())
             <div class="d-flex flex-wrap justify-content-evenly gap-3">
                 @foreach ($myCourses as $c)
-                    <div class="card" style="width: 18rem;">
-                        <img src="{{Storage::url('/assets/course-thumbnail/'.$c->image.'.jpg')}}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">{{$c->course_name}}</h5>
-                            <p class="card-text text-secondary">{{$c->course_description}}</p>
-                            <a href="/detail/{{$c->id}}" class="btn btn-primary">
-                                {{ 'Rp. '.number_format($c->price, 0, '', '.').',-'}}
-                            </a>
-                        </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="{{Storage::url('/assets/course-thumbnail/'.$c->image.'.jpg')}}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{$c->course_name}}</h5>
+                        <p class="card-text text-secondary">{{$c->course_description}}</p>
+                        <a href="/detail/{{$c->id}}" class="btn btn-primary">
+                            Details
+                        </a>
                     </div>
+                </div>
                 @endforeach
             </div>
+            @else
+            <div class="h2 text-primary text-center">
+                You don't have any courses currently!
+            </div>
+            @endif
         </div>
     </div>
     @endauth
