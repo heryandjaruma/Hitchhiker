@@ -34,9 +34,9 @@ class UserSeeder extends Seeder
 
         DB::table('users')->insert([
             'fullname' => 'Dummy User',
-            'username' => 'useruser',
+            'username' => 'dumdum',
             'age' => '20',
-            'password' => '$2a$12$mRaULGKHa9rcqm8zwAzh2eIjyXHL.VaNGtdgyewFt5N2j3oKAXZoW',
+            'password' => '$2a$12$R19T2Vi9IuiBsDopF6UT/uzEJxxaDGRUg3FVWPb3UwF90z3Yew62y',
             'address' => $faker->address,
             'phone' => $faker->phoneNumber,
             'birth' => $faker->dateTimeBetween,

@@ -33,7 +33,7 @@
                 <input type="submit" class="btn btn-outline-primary w-50" value="Login">
             </div>
             <div class="row justify-content-center m-3">
-                <a id="nothaveaccount" href="/signup" class="text-center">Not have an account?</a>
+                <a id="nothaveaccount" href="/signup" class="text-center text-decoration-none">Not have an account?</a>
             </div>
         </form>
         @if($errors->any())

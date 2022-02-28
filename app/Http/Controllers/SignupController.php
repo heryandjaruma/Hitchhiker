@@ -17,12 +17,12 @@ class SignupController extends Controller
         $validatedData = $request->validate([
             'fullname' => 'required|min:10|max:45',
             'username' => ['required', 'min:3', 'max:15', 'unique:users'],
-            'password' => ['required','min:8','max:20', 'alpha_num', "regex:/^([^\"!'\*\\]*)$/"],
-            'confirm password' => 'required|same:password',
+            'password' => 'required|min:8|max:20|alpha_num',
+            'confpassword' => 'required|same:password',
             'address' => 'required|min:3|max:255',
             'phone' => 'required|min:8|max:16',
             'birth' => 'required',
-            'email_address' => 'required|email:rfc,dns|unique:users',
+            'age' => 'integer|min:1|max:99',
         ]);
 
         $newSignup = new User($validatedData);

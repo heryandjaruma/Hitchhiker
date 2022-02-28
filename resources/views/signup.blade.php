@@ -24,7 +24,7 @@
                             <label for="floatingPassword">Password</label>
                         </div>
                         <div class="form-floating my-2">
-                            <input type="password" name="confirm password" class="form-control @error('confirm password') is-invalid @enderror" placeholder="Confirm Password" required>
+                            <input type="password" name="confpassword" class="form-control @error('confirm password') is-invalid @enderror" placeholder="Confirm Password" required>
                             <label for="floatingPassword">Confirm Password</label>
                         </div>
                     </div>
@@ -52,7 +52,7 @@
                     <input type="submit" class="btn btn-outline-primary w-50" value="Sign Up">
                 </div>
                 <div class="row justify-content-center m-3">
-                    <a id="nothaveaccount" href="/login" class="text-center">Already have account?</a>
+                    <a id="nothaveaccount" href="/login" class="text-center text-decoration-none">Already have account?</a>
                 </div>
             </form>
             @if($errors->any())
