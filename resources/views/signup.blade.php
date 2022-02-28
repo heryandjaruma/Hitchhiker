@@ -38,7 +38,7 @@
                             <label for="floatingInput">Phone number</label>
                         </div>
                         <div class="form-floating my-2">
-                            <input type="text" name="email_address" class="form-control @error('email_address') is-invalid @enderror" placeholder="Email" value="{{old('email_address')}}" required>
+                            <input type="text" name="age" class="form-control @error('age') is-invalid @enderror" placeholder="Age" value="{{old('age')}}" required>
                             <label for="floatingInput">Age</label>
                         </div>
                         <div class="form-floating my-2">

@@ -117,7 +117,7 @@
                             <img src="{{Storage::url('/assets/bootstrap.png')}}" class="card-img-top w-25 m-3" alt="...">
                         </div>
                         <h1>CSS Framework</h1>
-                        <p>Made with bootstrap 5</p>
+                        <p>Made with Bootstrap 5</p>
                     </div>
                     </div>
                 </div>
