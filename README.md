@@ -6,6 +6,6 @@
     <li>Execute `php artisan serve` in terminal on root folder</li>
 </ol>
 > There are already dummy user registered. You can use username 'dumdum' and password 'asdf1234!@#$' to login without register. <br>
-> All functionality is working, including register, login, and enroll course.
+> All functionalities is working, including register, login, and enroll course with @auth and @guest authentication.
 <hr>
 <h3>Remember, Don't panic!</h3>
